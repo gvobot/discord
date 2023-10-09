@@ -1,0 +1,56 @@
+{
+    "name": "gvobot",
+    "version": "1.0.0",
+    "description": "Good Vibes Only (GVO) is a open source discord bot focusing on making discord a safer place",
+    "main": "index.js",
+    "workspaces": [
+        "packages\\api",
+        "packages\\bot",
+        "packages\\dashboard"
+    ],
+    "funding": {
+        "type": "ko-fi",
+        "url": "https://ko-fi.com/notaestheticallyducko"
+    },
+    "scripts": {
+        "api_build": "npm run build --workspace=api",
+        "api_start": "npm run start --workspace=api",
+        "api_watch": "npm run watch --workspace=api",
+        "bot_build": "npm run build --workspace=bot",
+        "bot_start": "npm run start --workspace=bot",
+        "bot_watch": "npm run watch --workspace=bot",
+        "dbd_build": "npm run build --workspace=dashboard",
+        "dbd_start": "npm run start --workspace=dashboard",
+        "dbd_watch": "npm run watch --workspace=dashboard"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gvobot/bot.git"
+    },
+    "keywords": [
+        "discord",
+        "discordjs",
+        "typescript",
+        "ts"
+    ],
+    "author": "Sapphire Development",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/gvobot/bot/issues"
+    },
+    "homepage": "https://github.com/gvobot/bot#readme",
+    "devDependencies": {
+        "@types/node": "^20.6.4",
+        "dotenv": "^16.3.1",
+        "prettier": "^3.0.3",
+        "prisma": "^5.3.1",
+        "typescript": "^5.2.2"
+    },
+    "dependencies": {
+        "@prisma/client": "^5.3.1",
+        "discord.js": "^14.13.0",
+        "emoji-mixer": "^1.0.33",
+        "node-cron": "^3.0.2",
+        "winston": "^3.10.0"
+    }
+}

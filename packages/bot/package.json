@@ -1,0 +1,32 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "Good Vibes Only (GVO) is a open source discord bot focusing on making discord a safer place",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node .",
+    "build": "npx tsc",
+    "watch": "npx tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gvobot/bot.git"
+  },
+  "keywords": [
+    "discord",
+    "discordjs",
+    "typescript",
+    "ts",
+    "bot"
+  ],
+  "author": "Sapphire Development",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gvobot/bot/issues"
+  },
+  "homepage": "https://github.com/gvobot/bot#readme",
+  "dependencies": {
+    "canvafy": "^7.0.4"
+  }
+}

@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Guild {
+  guildId String @id @map("_id")
+  welcome Welcome?
+  goodbye Goodbye?
+}
+
+model Welcome {
+  guildId String @id @map("_id")
+  isEnabled Boolean @default(false)
+  channel String?
+  message Json?
+  guild Guild @relation(fields: [guildId], references: [guildId])
+}
+
+model Goodbye {
+  guildId String @id @map("_id")
+  isEnabled Boolean @default(false)
+  channel String?
+  message Json?
+  guild Guild @relation(fields: [guildId], references: [guildId])
+}
