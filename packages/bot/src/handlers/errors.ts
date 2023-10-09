@@ -17,7 +17,6 @@ export async function loadErrorLoggers() {
         logger.error(err);
         logger.error('Origin:');
         logger.error(origin);
-        // It's recommended to gracefully shut down the process after an uncaught exception
         process.exit(1);
     });
 
@@ -28,18 +27,10 @@ export async function loadErrorLoggers() {
         logger.error(err);
         logger.error('Origin:');
         logger.error(origin);
-        // It's recommended to gracefully shut down the process after an uncaught exception
         process.exit(1);
     });
 
     // error handling for multiple resolves (you can implement appropriate handling here)
     process.on('multipleResolves', (type, promise, reason) => {
-        // logger.error(' [Error_Handling] :: Multiple Resolves (MONITOR)');
-        // logger.error('Type:');
-        // logger.error(type);
-        // logger.error('Promise:');
-        // logger.error(promise);
-        // logger.error('Reason:');
-        // logger.error(reason);
     });
 }
