@@ -9,6 +9,7 @@ datasource db {
 
 model Guild {
   guildId String @id @map("_id")
+  language String   @default("en_US")
   welcome Welcome?
   goodbye Goodbye?
 }
