@@ -10,20 +10,23 @@ export interface ConfigInterface {
         secret: string;
     };
     avatars: {
-        others: {
-            blush: string;
-            joy: string;
-            heart_eyes: string;
-            wink: string;
-            sleepy: string;
-            thinking: string;
-            hugging: string;
-            grinning: string;
-            laughing: string;
-            sunglasses: string;
-            stuck_out_tongue: string;
-        };
-        events: { christmas: string; easter: string; halloween: string; new_year: string; valentines: string };
+        blush: string;
+        joy: string;
+        heart_eyes: string;
+        wink: string;
+        sleepy: string;
+        thinking: string;
+        hugging: string;
+        grinning: string;
+        laughing: string;
+        sunglasses: string;
+        stuck_out_tongue: string;
+
+        snowman: string;
+        rabbit: string;
+        jack_o_lantern: string;
+        star2: string;
+        gift_heart: string;
     };
     guilds: GuildTypes;
     colors: Object[ColorResolvable];

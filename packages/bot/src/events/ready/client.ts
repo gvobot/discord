@@ -15,11 +15,11 @@ const event: EventInterface = {
         const config = client.config;
 
         const avatars = new Map([
-            ['halloween', config.avatars.events.halloween],
-            ['christmas', config.avatars.events.christmas],
-            ['new_year', config.avatars.events.new_year],
-            ['easter', config.avatars.events.easter],
-            ['valentines', config.avatars.events.valentines],
+            ['halloween', config.avatars.jack_o_lantern],
+            ['christmas', config.avatars.snowman],
+            ['new_year', config.avatars.star2],
+            ['easter', config.avatars.rabbit],
+            ['valentines', config.avatars.gift_heart],
         ]);
 
         let clientAvatar: string | undefined;
@@ -64,16 +64,16 @@ const event: EventInterface = {
 
             default:
                 const randomAvatars = [
-                    config.avatars.others.blush,
-                    config.avatars.others.grinning,
-                    config.avatars.others.heart_eyes,
-                    config.avatars.others.hugging,
-                    config.avatars.others.joy,
-                    config.avatars.others.laughing,
-                    config.avatars.others.stuck_out_tongue,
-                    config.avatars.others.sunglasses,
-                    config.avatars.others.thinking,
-                    config.avatars.others.wink,
+                    config.avatars.blush,
+                    config.avatars.grinning,
+                    config.avatars.heart_eyes,
+                    config.avatars.hugging,
+                    config.avatars.joy,
+                    config.avatars.laughing,
+                    config.avatars.stuck_out_tongue,
+                    config.avatars.sunglasses,
+                    config.avatars.thinking,
+                    config.avatars.wink,
                 ];
                 const randomActivities = ['Good Vibes Only!', 'Positive Vibes Only!', 'Chill Vibes Only!'];
                 const randomAvatarIndex = Math.floor(Math.random() * randomAvatars.length);
@@ -99,7 +99,7 @@ const event: EventInterface = {
         };
 
         cron.schedule('0 0 * * *', updateAvatar);
-        cron.schedule('*/3 * * * *', updatePresence);
+        cron.schedule('*/2 * * * *', updatePresence);
 
         logger.info(`Logged in as ${client.user?.username}`);
     },
