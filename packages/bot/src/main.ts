@@ -2,7 +2,11 @@ import { Client, Collection, GatewayIntentBits, Partials } from 'discord.js';
 import { ConfigInterface, EventInterface, CommandInterface } from './types/interfaces.js';
 import { config } from './config.js';
 
-import { logger, checkEnvVariable, checkEnvUrlVariable } from './components/logger/index.js';
+import {
+    logger,
+    checkEnvVariable,
+    //checkEnvUrlVariable
+} from './components/logger/index.js';
 
 import { loadCommands } from './handlers/commands.js';
 import { loadEvents } from './handlers/events.js';
