@@ -26,11 +26,9 @@ export const config: ConfigInterface = {
         events: {
             christmas: 'https://github.com/gvobot/avatars/blob/main/events/christmas/crystal_ball_snowman.png?raw=true',
             easter: 'https://github.com/gvobot/avatars/blob/main/events/easter/crystal_ball_rabbit.png?raw=true',
-            halloween:
-                'https://github.com/gvobot/avatars/blob/main/events/halloween/crystal_ball_jack_o_lantern.png?raw=true',
+            halloween: 'https://github.com/gvobot/avatars/blob/main/events/halloween/crystal_ball_jack_o_lantern.png?raw=true',
             new_year: 'https://github.com/gvobot/avatars/blob/main/events/new-year/crystal_ball_star2.png?raw=true',
-            valentines:
-                'https://github.com/gvobot/avatars/blob/main/events/valentines-day/crystal_ball_gift_heart.png?raw=true',
+            valentines: 'https://github.com/gvobot/avatars/blob/main/events/valentines-day/crystal_ball_gift_heart.png?raw=true',
         },
     },
     guilds: [
