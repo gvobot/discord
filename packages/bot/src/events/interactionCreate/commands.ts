@@ -1,6 +1,6 @@
-import { DiscordClient } from '../../main.js';
-import { EventInterface, CommandInterface } from '../../types/interfaces.js';
-import { logger } from '../../components/logger/index.js';
+import { DiscordClient } from '../../bot.js';
+import { EventInterface, CommandInterface } from '../../components/typings/index.js';
+import { logError, CustomError, CustomErrorCodes, respondToError } from '../../components/handlers/exports.js';
 import { Events, ChatInputCommandInteraction, Collection } from 'discord.js';
 
 const event: EventInterface = {
@@ -14,11 +14,9 @@ const event: EventInterface = {
 
         const command: CommandInterface | undefined = client.commands.get(interaction.commandName);
         if (!command) {
-            logger.error(command);
-            return interaction.reply({
-                content: 'An error occurred while processing your command. Please try again later.',
-                ephemeral: true,
-            });
+            logError(new CustomError(CustomErrorCodes.FailedToProcessCommand, 'Failed to process'));
+            respondToError(interaction, new CustomError(CustomErrorCodes.FailedToProcessCommand, 'Failed to process'));
+            return;
         }
 
         /**
@@ -60,11 +58,8 @@ const event: EventInterface = {
                 command.execute(interaction, client);
             }
         } catch (error) {
-            logger.error(error);
-            return interaction.reply({
-                content: 'An error occurred while processing your command. Please try again later.',
-                ephemeral: true,
-            });
+            logError(new CustomError(CustomErrorCodes.FailedToProcessCommand, 'Failed to process'));
+            respondToError(interaction, new CustomError(CustomErrorCodes.FailedToProcessCommand, 'Failed to process'));
         }
     },
 };
