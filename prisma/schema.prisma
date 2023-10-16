@@ -7,25 +7,32 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Client {
+  clientid          String   @id @map("_id")
+  maintenance       Boolean  @default(false)
+  blacklistedGuilds String[]
+}
+
 model Guild {
-  guildId String @id @map("_id")
+  guildId  String   @id @map("_id")
   language String   @default("en_US")
-  welcome Welcome?
-  goodbye Goodbye?
+  premium  Boolean  @default(false)
+  welcome  Welcome?
+  goodbye  Goodbye?
 }
 
 model Welcome {
-  guildId String @id @map("_id")
+  guildId   String  @id @map("_id")
   isEnabled Boolean @default(false)
-  channel String?
-  message Json?
-  guild Guild @relation(fields: [guildId], references: [guildId])
+  channel   String?
+  message   Json?
+  guild     Guild   @relation(fields: [guildId], references: [guildId])
 }
 
 model Goodbye {
-  guildId String @id @map("_id")
+  guildId   String  @id @map("_id")
   isEnabled Boolean @default(false)
-  channel String?
-  message Json?
-  guild Guild @relation(fields: [guildId], references: [guildId])
+  channel   String?
+  message   Json?
+  guild     Guild   @relation(fields: [guildId], references: [guildId])
 }
