@@ -63,14 +63,16 @@ export class DiscordClient extends Client {
         this.cluster = new ClusterClient(this);
     }
     public async loadClient() {
-        if (this.cluster.maintenance)
-            logger.info(`${this.user?.username} on maintenance mode with ${this.cluster.maintenance}`);
-
-        this.cluster.on('ready', async () => {
-            await loadCommands(this);
-            await loadEvents(this);
+        this.cluster.on('ready', () => {
+            loadEvents(this)
+                .then(() => {
+                    loadCommands(this);
+                })
+                .catch((error) => {
+                    console.error(error);
+                });
         });
-        
+
         await this.startClient();
     }
     public async startClient() {
