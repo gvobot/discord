@@ -1,7 +1,6 @@
 import { DiscordClient } from '../../bot.js';
 import { EventInterface } from '../../components/typings/index.js';
 import { Events, ActivityType, PresenceStatusData } from 'discord.js';
-import { logger } from '../../components/handlers/exports.js';
 import moment from 'moment-timezone';
 
 const event: EventInterface = {
@@ -28,7 +27,7 @@ const event: EventInterface = {
             if (currentMonth === 6 && currentDay === 7) {
                 presenceActivity = 'Happy Birthday GVO! 🎉🎂';
                 presenceStatus = 'idle';
-            } else if (currentMonth === 10 && currentDay === 31) {
+            } else if (currentMonth === 10 && currentDay >= 1 && currentDay <= 31) {
                 clientAvatar = guildAvatar = avatars.get('halloween');
                 presenceActivity = 'Spooky Halloween 🎃👻';
                 presenceStatus = 'idle';
