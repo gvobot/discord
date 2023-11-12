@@ -1,0 +1,6 @@
+{
+    "ping": {
+        "name": "Ping",
+        "description": "Check if the bot is alive"
+    }
+}
