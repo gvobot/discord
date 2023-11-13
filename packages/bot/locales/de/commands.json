@@ -1,6 +1,6 @@
 {
     "ping": {
-        "name": "Ping",
+        "name": "ping",
         "description": "Check if the bot is alive"
     }
 }
