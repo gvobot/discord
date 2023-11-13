@@ -1,0 +1,6 @@
+{
+    "ping": {
+        "name": "ping",
+        "description": "Tjek om botten er i live"
+    }
+}
