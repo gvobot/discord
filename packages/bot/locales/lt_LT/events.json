@@ -1,7 +1,0 @@
-{
-    "interactionCreate": {
-        "command": {
-            "cooldown": "Please wait, you are on a cooldown for \\`{{commandName}}\\`. You can use it again <t:{{expiredTimestamp}}:R>."
-        }
-    }
-}
