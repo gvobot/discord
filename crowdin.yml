@@ -2,39 +2,50 @@ files:
     - source: /packages/bot/locales/en-US/*.json
       translation: /packages/bot/locales/%locale%/%original_file_name%
       languages_mapping:
-          {
-              locale:
-                  {
-                      bg-BG: 'bg',
-                      cs-CZ: 'cs',
-                      da-DK: 'da',
-                      de-DE: 'de',
-                      el-GR: 'el',
-                      en-GB: 'en-GB',
-                      en-US: 'en-US',
-                      es-ES: 'es-ES',
-                      fi-FI: 'fi',
-                      fr-FR: 'fr',
-                      hi-IN: 'hi',
-                      hr-HR: 'hr',
-                      hu-HU: 'hu',
-                      id-ID: 'id',
-                      it-IT: 'it',
-                      ja-JP: 'ja',
-                      ko-KR: 'ko',
-                      lt-LT: 'lt',
-                      nl-NL: 'nl',
-                      no-NO: 'no',
-                      pl-PL: 'pl',
-                      pt-BR: 'pt-BR',
-                      ro-RO: 'ro',
-                      ru-RU: 'ru',
-                      sv-SE: 'sv-SE',
-                      th-TH: 'th',
-                      tr-TR: 'tr',
-                      uk-UA: 'uk',
-                      vi-VN: 'vi',
-                      zh-CN: 'zh-CN',
-                      zh-TW: 'zh-TW',
-                  },
-          }
+          locale:
+              bg-BG: 'bg'
+              cs-CZ: 'cs'
+              da-DK: 'da'
+              de-DE: 'de'
+              el-GR: 'el'
+              en-GB: 'en-GB'
+              en-US: 'en-US'
+              es-ES: 'es-ES'
+              fi-FI: 'fi'
+              fr-FR: 'fr'
+              hi-IN: 'hi'
+              hr-HR: 'hr'
+              hu-HU: 'hu'
+              id-ID: 'id'
+              it-IT: 'it'
+              ja-JP: 'ja'
+              ko-KR: 'ko'
+              lt-LT: 'lt'
+              nl-NL: 'nl'
+              no-NO: 'no'
+              pl-PL: 'pl'
+              pt-BR: 'pt-BR'
+              ro-RO: 'ro'
+              ru-RU: 'ru'
+              sv-SE: 'sv-SE'
+              th-TH: 'th'
+              tr-TR: 'tr'
+              uk-UA: 'uk'
+              vi-VN: 'vi'
+              zh-CN: 'zh-CN'
+              zh-TW: 'zh-TW'
+      upload_options:
+          - match:
+                language:
+                    - sv-SE
+                    - pt-BR
+                    - en-GB
+                    - en-US
+                    - es-ES
+                file: '/packages/bot/locales/en-US/*.json'
+                source: '/packages/bot/locales/%locale%/%original_file_name%'
+          - match:
+                language:
+                    - '*'
+                file: '/packages/bot/locales/en-US/*.json'
+                source: '/packages/bot/locales/%two_letters_code%/%original_file_name%'
