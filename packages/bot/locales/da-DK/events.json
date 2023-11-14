@@ -1,0 +1,7 @@
+{
+    "interactionCreate": {
+        "command": {
+            "cooldown": "Vent venligst, du er på en nedkøling for `{{commandName}}`. Du kan bruge det igen <t:{{expiredTimestamp}}:R>."
+        }
+    }
+}
