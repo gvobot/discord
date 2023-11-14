@@ -1,3 +1,40 @@
 files:
-  - source: /packages/bot/locales/en-US/*.json
-    translation: /packages/bot/locales/%locale%/%original_file_name%
+    - source: /packages/bot/locales/en-US/*.json
+      translation: /packages/bot/locales/%locale%/%original_file_name%
+      languages_mapping:
+          {
+              locale:
+                  {
+                      bg-BG: 'bg',
+                      cs-CZ: 'cs',
+                      da-DK: 'da',
+                      de-DE: 'de',
+                      el-GR: 'el',
+                      en-GB: 'en-GB',
+                      en-US: 'en-US',
+                      es-ES: 'es-ES',
+                      fi-FI: 'fi',
+                      fr-FR: 'fr',
+                      hi-IN: 'hi',
+                      hr-HR: 'hr',
+                      hu-HU: 'hu',
+                      id-ID: 'id',
+                      it-IT: 'it',
+                      ja-JP: 'ja',
+                      ko-KR: 'ko',
+                      lt-LT: 'lt',
+                      nl-NL: 'nl',
+                      no-NO: 'no',
+                      pl-PL: 'pl',
+                      pt-BR: 'pt-BR',
+                      ro-RO: 'ro',
+                      ru-RU: 'ru',
+                      sv-SE: 'sv-SE',
+                      th-TH: 'th',
+                      tr-TR: 'tr',
+                      uk-UA: 'uk',
+                      vi-VN: 'vi',
+                      zh-CN: 'zh-CN',
+                      zh-TW: 'zh-TW',
+                  },
+          }
