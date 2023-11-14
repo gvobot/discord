@@ -1,8 +1,8 @@
 files:
     - source: /packages/bot/locales/en-US/*.json
-      translation: /packages/bot/locales/%locale%/%original_file_name%
+      translation: /packages/bot/locales/%{use_locale}%/%original_file_name%
       languages_mapping:
-          two_letters_code:
+          use_locale:
               bg: 'bg'
               zh-CN: 'zh-CN'
               zh-TW: 'zh-TW'
