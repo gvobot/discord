@@ -1,3 +1,40 @@
 files:
-  - source: /packages/bot/locales/en-US/*.json
-    translation: /packages/bot/locales/%two_letters_code%/%original_file_name%
+    - source: /packages/bot/locales/en-US/*.json
+      translation: /packages/bot/locales/%two_letters_code%/%original_file_name%
+      languages_mapping:
+          {
+              two_letters_code:
+                  {
+                      bg: 'bg',
+                      zh-CN: 'zh-CN',
+                      zh-TW: 'zh-TW',
+                      hr: 'hr',
+                      cs: 'cs',
+                      da: 'da',
+                      nl: 'nl',
+                      en-GB: 'en-GB',
+                      en-US: 'en-US',
+                      fi: 'fi',
+                      fr: 'fr',
+                      de: 'de',
+                      el: 'el',
+                      hi: 'hi',
+                      hu: 'hu',
+                      id: 'id',
+                      it: 'it',
+                      ja: 'ja',
+                      ko: 'ko',
+                      lt: 'lt',
+                      no: 'no',
+                      pl: 'pl',
+                      pt-BR: 'pt-BR',
+                      ro: 'ro',
+                      ru: 'ru',
+                      es-ES: 'es-ES',
+                      sv-SE: 'sv-SE',
+                      th: 'th',
+                      tr: 'tr',
+                      uk: 'uk',
+                      vi: 'vi',
+                  },
+          }
