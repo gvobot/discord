@@ -1,3 +1,7 @@
-files:
-    - source: /packages/bot/locales/en-US/*.json
-      translation: /packages/bot/locales/%locale%/%original_file_name%
+'files': [
+        {
+            'source': '/packages/bot/locales/en-US/*.json',
+            'translation': '/packages/bot/locales/%locale%/%original_file_name%',
+            # 'languages_mapping': { 'locale': { "": "" } },
+        },
+    ]
