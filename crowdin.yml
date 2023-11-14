@@ -1,6 +1,6 @@
 files:
     - source: /packages/bot/locales/en-US/*.json
-      translation: /packages/bot/locales/%code_type%/%original_file_name%
+      translation: /packages/bot/locales/%{code_type}%/%original_file_name%
       languages_mapping:
           code_type:
               bg: 'two_letters_code'
