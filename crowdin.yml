@@ -1,35 +1,40 @@
 files:
     - source: /packages/bot/locales/en-US/*.json
       translation: /packages/bot/locales/%two_letters_code%/%original_file_name%
-      excluded_target_languages: ['zh-CN', 'zh-TW', 'en-GB', 'en-US', 'pt-BR', 'es-ES', 'sv-SE']
+      excluded_target_languages:
+          - zh-CN
+          - zh-TW
+          - en-GB
+          - en-US
+          - pt-BR
+          - es-ES
+          - sv-SE
 
     - source: /packages/bot/locales/en-US/*.json
       translation: /packages/bot/locales/%locale%/%original_file_name%
       excluded_target_languages:
-          [
-              'en',
-              'bg',
-              'hr',
-              'cs',
-              'da',
-              'nl',
-              'fi',
-              'fr',
-              'de',
-              'el',
-              'hi',
-              'hu',
-              'id',
-              'it',
-              'ja',
-              'ko',
-              'lt',
-              'no',
-              'pl',
-              'ro',
-              'ru',
-              'th',
-              'tr',
-              'uk',
-              'vi',
-          ]
+          - en
+          - bg
+          - hr
+          - cs
+          - da
+          - nl
+          - fi
+          - fr
+          - de
+          - el
+          - hi
+          - hu
+          - id
+          - it
+          - ja
+          - ko
+          - lt
+          - no
+          - pl
+          - ro
+          - ru
+          - th
+          - tr
+          - uk
+          - vi
