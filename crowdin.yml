@@ -3,7 +3,6 @@
 'base_path': '/packages/bot/locales/'
 'base_url': 'https://api.crowdin.com'
 'preserve_hierarchy': true
-
 'files':
     [
         {
