@@ -2,6 +2,6 @@
     [
         {
             'source': '/packages/bot/locales/en-US/*.json',
-            'translation': '/packages/bot/locales/%two_letters_code%/%original_file_name%',
+            'translation': '/packages/bot/locales/%locale%/%original_file_name%',
         },
     ]
