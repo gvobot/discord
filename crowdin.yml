@@ -2,42 +2,6 @@
     [
         {
             'source': '/packages/bot/locales/en-US/*.json',
-            'translation': '/packages/bot/locales/%locale%/%original_file_name%',
-            'languages_mapping':
-                {
-                    'locale':
-                        {
-                            'bg-BG': 'bg',
-                            'cs-CZ': 'cs',
-                            'da-DK': 'da',
-                            'de-DE': 'de',
-                            'el-GR': 'el',
-                            'fi-FI': 'fi',
-                            'fr-FR': 'fr',
-                            'hi-IN': 'hi',
-                            'hr-HR': 'hr',
-                            'hu-HU': 'hu',
-                            'id-ID': 'id',
-                            'it-IT': 'it',
-                            'ja-JP': 'ja',
-                            'ko-KR': 'ko',
-                            'lt-LT': 'lt',
-                            'nl-NL': 'nl',
-                            'en-GB': 'en-GB',
-                            'en-US': 'en-US',
-                            'no-NO': 'no',
-                            'pl-PL': 'pl',
-                            'pt-BR': 'pt-BR',
-                            'ro-RO': 'ro',
-                            'ru-RU': 'ru',
-                            'es-ES': 'es-ES',
-                            'sv-SE': 'sv-SE',
-                            'th-TH': 'th',
-                            'uk-UA': 'uk',
-                            'vi-VI': 'vi',
-                            'zh-CN': 'zh-CN',
-                            'zh-TW': 'zh-TW',
-                        },
-                },
+            'translation': '/packages/bot/locales/%two_letters_code%/%original_file_name%',
         },
     ]
