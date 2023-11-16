@@ -5,14 +5,14 @@
     },
     "info": {
         "name": "info",
-        "description": "Få information om alt",
+        "description": "Få information om en bruger eller en server",
         "user": {
-            "name": "user",
-            "description": "Get information about a specified user"
+            "name": "bruger",
+            "description": "Få information om en angivet bruger"
         },
         "server": {
             "name": "server",
-            "description": "Get information about this server"
+            "description": "Få information om denne server"
         }
     }
 }
