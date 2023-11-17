@@ -1,0 +1,18 @@
+{
+    "ping": {
+        "name": "ping",
+        "description": "Check if the bot is alive"
+    },
+    "info": {
+        "name": "info",
+        "description": "Get information about anything",
+        "user": {
+            "name": "user",
+            "description": "Get information about a specified user"
+        },
+        "server": {
+            "name": "server",
+            "description": "Get information about this server"
+        }
+    }
+}
