@@ -1,28 +1,30 @@
 # Good Vibes Only (GVO) Discord Bot
 
+# PLEASE DO NOT USE THIS, IT IS NOT STABLE YET!
+
 **Welcome to the Good Vibes Only (GVO) Discord Bot Repository!** GVO is an open-source and versatile Discord bot designed to enhance your server with a variety of features, including customization, updates, moderation, server security, utility, and more.
 
 ## Table of Contents
 
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Invite GVO to Your Server](#invite-gvo-to-your-server)
-  - [Configuration](#configuration)
-- [Commands](#commands)
-- [Contributing](#contributing)
-- [Support](#support)
-- [License](#license)
-- [Changelog](#changelog)
-- [Star History](#star-history)
+-   [Features](#features)
+-   [Getting Started](#getting-started)
+    -   [Invite GVO to Your Server](#invite-gvo-to-your-server)
+    -   [Configuration](#configuration)
+-   [Commands](#commands)
+-   [Contributing](#contributing)
+-   [Support](#support)
+-   [License](#license)
+-   [Changelog](#changelog)
+-   [Star History](#star-history)
 
 ## Features
 
-- **Customization**: GVO offers extensive customization options to tailor the bot to your server's unique needs.
-- **Regular Updates**: Enjoy a bot that is actively maintained, with new features and improvements added regularly.
-- **Moderation Tools**: Keep your server safe and organized with powerful moderation commands.
-- **Server Security**: Enhance server security and manage permissions effectively with GVO.
-- **Utility Commands**: Access various utility commands to assist you and your server members.
-- **And More**: GVO is designed to provide a versatile and enjoyable Discord experience.
+-   **Customization**: GVO offers extensive customization options to tailor the bot to your server's unique needs.
+-   **Regular Updates**: Enjoy a bot that is actively maintained, with new features and improvements added regularly.
+-   **Moderation Tools**: Keep your server safe and organized with powerful moderation commands.
+-   **Server Security**: Enhance server security and manage permissions effectively with GVO.
+-   **Utility Commands**: Access various utility commands to assist you and your server members.
+-   **And More**: GVO is designed to provide a versatile and enjoyable Discord experience.
 
 ## Getting Started
 
@@ -41,7 +43,7 @@ After inviting GVO, you can configure the bot's behavior to match your preferenc
 
 Here are some of the commands you can use with GVO:
 
-- `/help`: Get a list of available commands and their descriptions.
+-   `/help`: Get a list of available commands and their descriptions.
 
 For a complete list of commands and their details, type `/help` in your server.
 
