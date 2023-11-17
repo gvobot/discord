@@ -5,14 +5,14 @@
     },
     "info": {
         "name": "info",
-        "description": "Obtener información sobre cualquier cosa",
+        "description": "Obtener información sobre un usuario o servidor",
         "user": {
-            "name": "user",
-            "description": "Get information about a specified user"
+            "name": "usuario",
+            "description": "Obtener información sobre un usuario específico"
         },
         "server": {
-            "name": "server",
-            "description": "Get information about this server"
+            "name": "servidor",
+            "description": "Obtener información sobre este servidor"
         }
     }
 }
