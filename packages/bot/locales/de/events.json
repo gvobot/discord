@@ -1,0 +1,7 @@
+{
+    "interactionCreate": {
+        "command": {
+            "cooldown": "Bitte warte, du bist auf einer Abklingzeit für \\`{{commandName}}\\`. du kannst sie erneut <t:{{expiredTimestamp}}:R> benutzen."
+        }
+    }
+}
