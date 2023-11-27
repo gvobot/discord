@@ -14,25 +14,19 @@ model Client {
 }
 
 model Guild {
-  guildId  String   @id @map("_id")
-  language String   @default("en_US")
-  premium  Boolean  @default(false)
-  welcome  Welcome?
-  goodbye  Goodbye?
+  guildId      String     @id @map("_id")
+  language     String     @default("en-US")
+  themeColor   String     @default("#2b2d31")
+  isMembership Boolean    @default(false)
+  featured     Boolean    @default(false)
+  duckCoins    Int        @default(0)
+  guildGate    GuildGate?
 }
 
-model Welcome {
-  guildId   String  @id @map("_id")
-  isEnabled Boolean @default(false)
-  channel   String?
-  message   Json?
-  guild     Guild   @relation(fields: [guildId], references: [guildId])
-}
-
-model Goodbye {
-  guildId   String  @id @map("_id")
-  isEnabled Boolean @default(false)
-  channel   String?
-  message   Json?
-  guild     Guild   @relation(fields: [guildId], references: [guildId])
+model GuildGate {
+  guildId      String   @id @map("_id")
+  joinRoles    String[]
+  joinChannel  String?
+  leaveChannel String?
+  guild        Guild    @relation(fields: [guildId], references: [guildId])
 }

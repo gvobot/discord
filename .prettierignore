@@ -3,12 +3,3 @@
 
 # NPM Packages
 node_modules
-
-# ESLint
-.eslintrc.{js,yml,json}
-
-# VS Code
-.vscode
-
-# GitHub
-.github
