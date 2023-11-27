@@ -1,0 +1,3 @@
+[submodule "packages/dashboard"]
+	path = packages/dashboard
+	url = https://github.com/gvobot/dashboard
