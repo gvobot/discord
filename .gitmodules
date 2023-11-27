@@ -1,0 +1,6 @@
+[submodule "packages/dashboard"]
+	path = packages/dashboard
+	url = https://github.com/gvobot/dashboard.git
+[submodule "packages/bot"]
+	path = packages/bot
+	url = https://github.com/gvobot/bot.git
