@@ -18,8 +18,7 @@ model Guild {
   language     String     @default("en-US")
   themeColor   String     @default("#2b2d31")
   isMembership Boolean    @default(false)
-  featured     Boolean    @default(false)
-  duckCoins    Int        @default(0)
+  smileys      Int        @default(0)
   guildGate    GuildGate?
 }
 
