@@ -75,4 +75,4 @@ Enjoy enhancing your server with the versatile features of GVO! 🌟
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=gvobot/bot&type=Date)](https://star-history.com/#gvobot/bot&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=gvobot/discord&type=Date)](https://star-history.com/#gvobot/discord&Date)
